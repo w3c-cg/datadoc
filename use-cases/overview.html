@@ -1,198 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>VVD Use cases overview</title>
-    <script
-      src="https://www.w3.org/Tools/respec/respec-w3c"
-      class="remove"
-      defer
-    ></script>
-    <script class="remove">
-      // All config options at https://respec.org/docs/
-      var respecConfig = {
-        specStatus: "CG-DRAFT",
-        logos: [
-          {
-            src: "../images/ddi-logo-r.png",
-            alt: "DDI",
-            height: "48",
-            width: "200",
-            url: "https://ddialliance.org/",
-			id: "ddi-logo"
-          }
-        ],
-        editors: [
-          {
-            name: "Franck Cotton",
-            company: "Making Sense",
-            companyURL: "https://making-sense.info",
-            orcid: "0000-0003-4567-9048",
-            w3cid: 50407,
-          },
-          {
-            name: "Minnie Mouse",
-            company: "The Walt Disney Company",
-            companyURL: "https://thewaltdisneycompany.com/",
-          }
-        ],
-        github: "w3c-cg/datadoc/use-cases",
-        shortName: "vvd-cases",
-        xref: "web-platform",
-        group: "dx",
-      };
-    </script>
-  </head>
-  <body>
-    <section id="abstract">
-      <p>This is an overview of the use cases for VVD.</p>
-    </section>
-    <section id="sotd">
-      <p>This is required.</p>
-    </section>
-    <section class="informative">
-      <h2>Introduction</h2>
-      <p>Some informative introductory text.</p>
+
+<head>
+  <meta charset="utf-8" />
+  <title>VVD Use cases overview</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
+      specStatus: "CG-DRAFT",
+      logos: [
+        {
+          src: "../images/ddi-logo-r.png",
+          alt: "DDI",
+          height: "48",
+          width: "200",
+          url: "https://ddialliance.org/",
+          id: "ddi-logo"
+        }
+      ],
+      editors: [
+        {
+          name: "Franck Cotton",
+          company: "Making Sense",
+          companyURL: "https://making-sense.info",
+          orcid: "0000-0003-4567-9048",
+          w3cid: 50407,
+        },
+        {
+          name: "Albert Meroño-Peñuela",
+          company: "King's College London",
+          companyURL: "https://www.kcl.ac.uk/",
+        }
+      ],
+      github: "w3c-cg/datadoc/use-cases",
+      shortName: "vvd-cases",
+      xref: "web-platform",
+      group: "dx",
+    };
+  </script>
+</head>
+
+<body>
+  <section id="abstract">
+    <p>This is an overview of the use cases for VVD.</p>
+  </section>
+  <section id="sotd">
+    <p>This is required.</p>
+  </section>
+  <section class="informative">
+    <h2>Introduction</h2>
+    <p>Some informative introductory text.</p>
+  </section>
+  <section>
+    <h2>Use cases</h2>
+    <section>
+      <h3>Overview</h3>
+
+      <table>
+        <tr>
+          <th>UCID</th>
+          <th>Use Case</th>
+          <th>Capability</th>
+          <th>Expected Standards</th>
+          <th>Contact</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>SDGs</td>
+          <td>Data harmonization + aggregation</td>
+          <td>
+            <ul>
+              <li>QB</li>
+            </ul>
+          </td>
+          <td>Luis</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CLARIAH</td>
+          <td>Concept and variable attachment</td>
+          <td>
+            <ul>
+              <li>CSVW</li>
+            </ul>
+          </td>
+          <td>Albert</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Google</td>
+          <td>Concept and variable attachment</td>
+          <td>
+            <ul>
+              <li>Croissant</li>
+              <li>Possibly sc:variableMeasurement, sc:StatisticalVariable</li>
+            </ul>
+          </td>
+          <td>Pascal</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Smart Energy Lab</td>
+          <td>Data integration between surveys &amp; measurements</td>
+          <td>
+            <ul>
+              <li>SOSA</li>
+              <li>DDI-L</li>
+            </ul>
+          </td>
+          <td>Arofan</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Data portals (<a href="http://data.gov">data.gov</a> and <a
+              href="http://data.europa.eu">data.europa.eu</a>)</td>
+          <td>Data discovery &amp; understanding, assessing &amp; reusing data fit for purpose</td>
+          <td>
+            <ul>
+              <li>DCAT-US</li>
+              <li>DCAT-AP</li>
+              <li>QB</li>
+              <li>Content Standard for Digital Geospatial Metadata (<a
+                  href="https://www.fgdc.gov/metadata/csdgm-standard">CSDGM</a>) (?)</li>
+              <li>I-ADOPT (?)</li>
+            </ul>
+          </td>
+          <td>Dan</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><a
+              href="https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use">HVD</a>
+            (high value datasets)</td>
+          <td>
+            <p>Attach variable descriptions (here we have both variables and concepts)</p>
+            <p>Something on public policy ("high valuable metadata")</p>
+          </td>
+          <td>
+            <ul>
+              <li>QB (?)</li>
+              <li>DCAT (?)</li>
+              <li>DQV</li>
+            </ul>
+          </td>
+          <td>Filipi</td>
+        </tr>
+      </table>
+
     </section>
     <section>
-      <h2>Use cases</h2>
-      <section>
-        <h3>Overview</h3>
+      <h3>Narrative</h3>
+    </section>
+  </section>
+  <section>
+    <h2>Tentative use cases</h2>
+    <section>
+      <h3>Overview</h3>
 
-        <table>
+      <table>
         <tr>
-            <th>UCID</th>
-            <th>Use Case</th>
-            <th>Capability</th>
-            <th>Expected Standards</th>
-            <th>Contact</th>
+          <th>UCID</th>
+          <th>Use Case</th>
+          <th>Capability</th>
+          <th>Expected Standards</th>
+          <th>Contact</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td>SDGs</td>
-            <td>Data harmonization + aggregation</td>
-            <td>
-                <ul>
-                    <li>QB</li>
-                </ul>
-            </td>
-            <td>Luis</td>
+          <td>A</td>
+          <td>Malawi disasters</td>
+          <td>Data harmonization + aggregation</td>
+          <td>
+            <ul>
+              <li>DDI Codebook</li>
+              <li>OMOP</li>
+            </ul>
+          </td>
+          <td>Arofan</td>
         </tr>
         <tr>
-            <td>2</td>
-            <td>CLARIAH</td>
-            <td>Concept and variable attachment</td>
-            <td>
-                <ul>
-                    <li>CSVW</li>
-                </ul>
-            </td>
-            <td>Albert</td>
+          <td>B</td>
+          <td>Sensitive variables</td>
+          <td>Identifying variables that you consider sensitive (privacy)</td>
+          <td>
+            <ul>
+              <li>DPV</li>
+              <li>Cf. <a href="https://github.com/w3c/dpv/issues/31">https://github.com/w3c/dpv/issues/31</a> and
+                particularly <a href="https://github.com/w3c/dpv/issues/219">https://github.com/w3c/dpv/issues/219</a>
+              </li>
+            </ul>
+          </td>
+          <td>Steve, Deirdre, Darren, Archana</td>
         </tr>
-        <tr>
-            <td>3</td>
-            <td>Google</td>
-            <td>Concept and variable attachment</td>
-            <td>
-                <ul>
-                    <li>Croissant</li>
-                    <li>Possibly sc:variableMeasurement, sc:StatisticalVariable</li>
-                </ul>
-            </td>
-            <td>Pascal</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Smart Energy Lab</td>
-            <td>Data integration between surveys &amp; measurements</td>
-            <td>
-                <ul>
-                    <li>SOSA</li>
-                    <li>DDI-L</li>
-                </ul>
-            </td>
-            <td>Arofan</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Data portals (<a href="http://data.gov">data.gov</a> and <a href="http://data.europa.eu">data.europa.eu</a>)</td>
-            <td>Data discovery &amp; understanding, assessing &amp; reusing data fit for purpose</td>
-            <td>
-                <ul>
-                    <li>DCAT-US</li>
-                    <li>DCAT-AP</li>
-                    <li>QB</li>
-                    <li>Content Standard for Digital Geospatial Metadata (<a href="https://www.fgdc.gov/metadata/csdgm-standard">CSDGM</a>) (?)</li>
-                    <li>I-ADOPT (?)</li>
-                </ul>
-            </td>
-            <td>Dan</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td><a href="https://digital-strategy.ec.europa.eu/en/news/commission-defines-high-value-datasets-be-made-available-re-use">HVD</a> (high value datasets)</td>
-            <td>
-                <p>Attach variable descriptions (here we have both variables and concepts)</p>
-                <p>Something on public policy ("high valuable metadata")</p>
-            </td>
-            <td>
-                <ul>
-                    <li>QB (?)</li>
-                    <li>DCAT (?)</li>
-                    <li>DQV</li>
-                </ul>
-            </td>
-            <td>Filipi</td>
-        </tr>
-    </table>
+      </table>
 
-      </section>
-      <section>
-        <h3>Narative</h3>
-      </section>
     </section>
     <section>
-      <h2>Tentative use cases</h2>
-      <section>
-        <h3>Overview</h3>
+      <h3>Narrative</h3>
+    </section>
+  </section>
+</body>
 
-        <table>
-        <tr>
-            <th>UCID</th>
-            <th>Use Case</th>
-            <th>Capability</th>
-            <th>Expected Standards</th>
-            <th>Contact</th>
-        </tr>
-        <tr>
-            <td>A</td>
-            <td>Malawi disasters</td>
-            <td>Data harmonization + aggregation</td>
-            <td>
-                <ul>
-                    <li>DDI Codebook</li>
-                    <li>OMOP</li>
-                </ul>
-            </td>
-            <td>Arofan</td>
-        </tr>
-        <tr>
-            <td>B</td>
-            <td>Sensitive variables</td>
-            <td>Identifying variables that you consider sensitive (privacy)</td>
-            <td>
-                <ul>
-                    <li>DPV</li>
-                    <li>Cf. <a href="https://github.com/w3c/dpv/issues/31">https://github.com/w3c/dpv/issues/31</a> and particularly <a href="https://github.com/w3c/dpv/issues/219">https://github.com/w3c/dpv/issues/219</a></li>
-                </ul>
-            </td>
-            <td>Steve, Deirdre, Darren, Archana</td>
-        </tr>
-    </table>
-
-      </section>
-      <section>
-        <h3>Narative</h3>
-      </section>
-    </section  </body>
 </html>
