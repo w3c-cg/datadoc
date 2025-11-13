@@ -49,14 +49,22 @@
   </head>
   <body>
     <section id="abstract">
-      <p>This is required.</p>
+
+      <p>This document provides a specification for the Vocabulary for Variable Description (VVD), a model for machine-actionable and interoperable dataset variable specifications, enabling users to semantically describe variables contained in datasets and their relationships.</p>
+
     </section>
     <section id="sotd">
       <p>This is required.</p>
     </section>
     <section class="informative">
       <h2>Introduction</h2>
-      <p>Some informative introductory text.</p>
+
+      <p>Sharing data among researchers, governments and citizens, whether openly or not, requires the provision of metadata. Different communities use different metadata standards to describe their datasets, some of which are highly specialized. At a general level W3C’s Data Catalog Vocabulary, <a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a>, is in widespread use, but so too are <a href="https://ckan.org/">CKAN</a>’s native schema, schema.org's <a href="http://schema.org/Dataset">dataset description</a> vocabulary, <a href="http://www.iso.org/iso/catalogue_detail?csnumber=26020">ISO 19115</a>, <a href="http://www.ddialliance.org/explore-documentation">DDI</a>, <a href="https://sdmx.org/">SDMX</a>, <a href="https://huggingface.co/docs/hub/en/datasets-cards">Hugging Face's Dataset Cards</a>, <a href="http://www.eurocris.org/cerif/main-features-cerif">CERIF</a>, <a href="https://www.w3.org/TR/void/" title="Describing Linked Datasets with the VoID Vocabulary">VoID</a>, <a href="http://inspire.ec.europa.eu/index.cfm/pageid/101">INSPIRE</a> and, in the healthcare and life sciences domain, the <a href="https://www.w3.org/TR/hcls-dataset/">Dataset Description vocabulary</a> and <a href="https://github.com/biocaddie/WG3-MetadataSpecifications">DATS</a> (<a href="https://doi.org/10.1101/103143" title="DATS: the data tag suite to enable discoverability of datasets">ref</a>) among others. The machine learning, AI, and scientific data communities have recently proposed <a href="https://mlcommons.org/working-groups/data/croissant/">Croissant</a> and <a href="https://www.researchobject.org/ro-crate/">RO-Crates</a> for similar purposes, with an increasing trend of including more fine-grained metadata at the variable level for the machine-actionability of ML/AI models and agents.</p>
+
+      <p>Variables are a fundamental concept in dataset design, dataset search and model training and compositionality. Despite the success of the previous WG charter in publishing DCAT-3, there is still a need for describing the variables encoded within datasets in an explicitly and semantically interoperable manner. This need is also underlined by the growing ecosystem of standards towards  data AI readiness. Variable descriptions are partly covered in existing recommendations like the <a href="https://www.w3.org/TR/tabular-metadata/">Metadata Vocabulary for Tabular Data</a> (used to annotate tabular data) and the <a href="https://www.w3.org/TR/vocab-data-cube/">RDF Data Cube Vocabulary</a>, QB (used to describe statistical data and time series). While these recommendations have been successful and are in wide use, variable descriptions still must be addressed to guarantee adoption across different communities, including automated agents.</p>
+
+      <p>This document provides a specification for the Vocabulary for Variable Description (VVD), a model for machine-actionable and interoperable dataset variable specifications, enabling users to semantically describe variables contained in datasets and their relationships.</p>
+
       <aside class="note" title="A useful note">
         <p>I'm a note!</p>
       </aside>
