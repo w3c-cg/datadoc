@@ -52,6 +52,12 @@
 
       <p>This document provides a specification for the Vocabulary for Variable Description (VVD), a model for machine-actionable and interoperable dataset variable specifications, enabling users to semantically describe variables contained in datasets and their relationships.</p>
 
+       <aside class="note" title="VVD namespace">
+        <p>Anticipate here VVD's namespace and suggested prefix (vvd)</p>
+      </aside>
+
+
+
     </section>
     <section id="sotd">
       <p>This is required.</p>
@@ -59,18 +65,90 @@
     <section class="informative">
       <h2>Introduction</h2>
 
+      <aside class="note" title="Data Variables">
+        <p>Add a subsection here "Data Variables", explain what they are, and adapt the narrative of the previous paragraphs.</p>
+      </aside>
+
+      
+
       <p>Sharing data among researchers, governments and citizens, whether openly or not, requires the provision of metadata. Different communities use different metadata standards to describe their datasets, some of which are highly specialized. At a general level W3C’s Data Catalog Vocabulary, <a href="https://www.w3.org/TR/vocab-dcat/">DCAT</a>, is in widespread use, but so too are <a href="https://ckan.org/">CKAN</a>’s native schema, schema.org's <a href="http://schema.org/Dataset">dataset description</a> vocabulary, <a href="http://www.iso.org/iso/catalogue_detail?csnumber=26020">ISO 19115</a>, <a href="http://www.ddialliance.org/explore-documentation">DDI</a>, <a href="https://sdmx.org/">SDMX</a>, <a href="https://huggingface.co/docs/hub/en/datasets-cards">Hugging Face's Dataset Cards</a>, <a href="http://www.eurocris.org/cerif/main-features-cerif">CERIF</a>, <a href="https://www.w3.org/TR/void/" title="Describing Linked Datasets with the VoID Vocabulary">VoID</a>, <a href="http://inspire.ec.europa.eu/index.cfm/pageid/101">INSPIRE</a> and, in the healthcare and life sciences domain, the <a href="https://www.w3.org/TR/hcls-dataset/">Dataset Description vocabulary</a> and <a href="https://github.com/biocaddie/WG3-MetadataSpecifications">DATS</a> (<a href="https://doi.org/10.1101/103143" title="DATS: the data tag suite to enable discoverability of datasets">ref</a>) among others. The machine learning, AI, and scientific data communities have recently proposed <a href="https://mlcommons.org/working-groups/data/croissant/">Croissant</a> and <a href="https://www.researchobject.org/ro-crate/">RO-Crates</a> for similar purposes, with an increasing trend of including more fine-grained metadata at the variable level for the machine-actionability of ML/AI models and agents.</p>
 
       <p>Variables are a fundamental concept in dataset design, dataset search and model training and compositionality. Despite the success of the previous WG charter in publishing DCAT-3, there is still a need for describing the variables encoded within datasets in an explicitly and semantically interoperable manner. This need is also underlined by the growing ecosystem of standards towards  data AI readiness. Variable descriptions are partly covered in existing recommendations like the <a href="https://www.w3.org/TR/tabular-metadata/">Metadata Vocabulary for Tabular Data</a> (used to annotate tabular data) and the <a href="https://www.w3.org/TR/vocab-data-cube/">RDF Data Cube Vocabulary</a>, QB (used to describe statistical data and time series). While these recommendations have been successful and are in wide use, variable descriptions still must be addressed to guarantee adoption across different communities, including automated agents.</p>
 
       <p>This document provides a specification for the Vocabulary for Variable Description (VVD), a model for machine-actionable and interoperable dataset variable specifications, enabling users to semantically describe variables contained in datasets and their relationships.</p>
 
-      <aside class="note" title="A useful note">
-        <p>I'm a note!</p>
-      </aside>
+      
     </section>
+
     <section>
-      <h2>A section</h2>
+      <h2>Origins and Purpose of VVD</h2>
+
+      <section>
+        <h3>Purpose</h3>
+        
+        <aside class="note" title="VVD in combination with other vocabularies">
+        <p>Add either here, on vocabulary overview, or both, about how we envision VVD to be combined with other existing vocabularies (DCAT, CSVW, etc) to enhance the use of both VVD and those existing vocabularies. The other feature is "pluggability", i.e. the ability to use VVD classes and properties in compliance with the constraints of other vocabularies data models (e.g. Croissant).</p>
+      </aside>
+
+      <aside class="note" title="VVD and different levels of variable specificity">
+        <p>Add either here, on vocabulary overview, or both, about how we envision VVD to allow users to specify variables at different levels of absrtraction (following the ideas behind DDI's Variable Cascade model).</p>
+      </aside>
+
+        <p class="issue" data-number="1">
+          <!-- Issue can automatically be populated from GitHub -->
+        </p>
+
+        <aside class="note" title="Link to WG Note on relation to other vocabularies">
+        <p>We need to have a WG Note with Related Work, summarising related standards, pros/cons, etc. and then link to it here to clearly clarify the delta.</p>
+      </aside>
+      
+      </section>
+
+      
+
+      <section>
+        <h3>Origins</h3>
+      
+      
+      </section>
+      
+      
+    </section>
+
+    <section>
+        <h2>Namespaces</h2>
+        <p>Normative and non-normative namespaces.</p>
+      </section>
+
+
+    <section>
+      <h2>Use Cases & Requirements</h2>
+      
+      
+    </section>
+
+    
+    <section>
+      <h2>Vocabulary Overview</h2>
+      
+
+      
+
+      <section>
+        <h3>Data Model</h3>
+        
+      </section>
+
+    </section>
+
+    <section>
+      <h2>Vocabulary Specification</h2>
+      
+      
+    </section>
+
+    <section>
+      <h2>Examples</h2>
       <aside class="example">
         <p>This is an example.</p>
         <pre class="js">
@@ -78,14 +156,10 @@
         function someJavaScript(){}
         </pre>
       </aside>
-      <section>
-        <h3>I'm a sub-section</h3>
-        <p class="issue" data-number="121">
-          <!-- Issue can automatically be populated from GitHub -->
-        </p>
-      </section>
+      
     </section>
-    <section data-dfn-for="Foo">
+
+    <!-- <section data-dfn-for="Foo">
       <h2>Start your spec!</h2>
       <pre class="idl">
         [Exposed=Window]
@@ -102,11 +176,20 @@
       <ol class="algorithm">
         <li>A |variable:DOMString| can be declared like this.</li>
       </ol>
-    </section>
+    </section> -->
+
     <section id="conformance">
       <p>
         This is required for specifications that contain normative material.
       </p>
     </section>
+
+    <section id="acknowledgements" class="appendix">
+      <h2>Acknowledgements</h2>
+      <p>
+        Our acknowledgements.
+      </p>
+    </section>
+
   </body>
 </html>
